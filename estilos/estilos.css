@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  max-width: 850px;
+}
+
+aside {
+  width: 650px;
+  margin: 20px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: aliceblue;
+  color: #000000;
+}
+
+aside img {
+  width: 200px;
+}
+
+footer {
+  margin-top: 40px;
+  padding-top: 10px;
+  text-align: center;
+}
