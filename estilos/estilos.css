@@ -3,8 +3,31 @@
   padding: 0;
 }
 
+nav {
+  background-color: aliceblue;
+  padding: 10px;
+}
+
+nav a {
+  color: #000000;
+  padding: 8px;
+  display: block;
+}
+
 main {
   max-width: 850px;
+}
+
+main img {
+  width: 200px;
+  height: auto;
+  border: 1px solid #000000;
+  padding: 10px;
+  box-shadow: inset;
+}
+
+h1 {
+  color: cornflowerblue;
 }
 
 aside {
@@ -19,6 +42,11 @@ aside {
 
 aside img {
   width: 200px;
+  height: auto;
+}
+
+p {
+  padding: 0;
 }
 
 footer {
