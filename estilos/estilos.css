@@ -23,7 +23,7 @@ main img {
   height: auto;
   border: 1px solid #000000;
   padding: 10px;
-  box-shadow: inset;
+  box-shadow: 10px 5px 5px black;
 }
 
 h1 {
@@ -51,6 +51,6 @@ p {
 
 footer {
   margin-top: 40px;
-  padding-top: 10px;
+  border-top: 10px;
   text-align: center;
 }
