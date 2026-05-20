@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
@@ -28,8 +29,10 @@ main img {
   width: var(--comprimento-imagem);
   height: auto;
   border: 1px solid var(--cor-texto-borda);
-  padding: 10px;
-  box-shadow: 8px 2px 2px var(--cor-texto-borda);
+  border-radius: 8px;
+  padding: 5px;
+  box-shadow: 4px 2px 2px var(--cor-texto-borda);
+  float: right;
 }
 
 h1 {
@@ -38,12 +41,13 @@ h1 {
 
 aside {
   width: 650px;
-  margin: 20px;
-  border: 1px solid var(--cor-texto-borda);
   border-radius: 5px;
-  padding: 20px;
-  background-color: var(--cor-fundo);
-  color: var(--cor-texto-borda);
+}
+
+aside h2 {
+  position: absolute;
+  top: 25px;
+  left: 45px;
 }
 
 aside img {
@@ -53,10 +57,23 @@ aside img {
 
 p {
   padding: 0;
+  text-align: justify;
 }
 
 footer {
   margin-top: 40px;
   border-top: 10px;
   text-align: center;
+}
+
+/* Seletores de classe */
+
+.caixa {
+  position: relative;
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid var(--cor-texto-borda);
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto-borda);
+  clear: both
 }
