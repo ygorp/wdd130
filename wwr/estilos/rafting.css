@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Paleta de cores da logo*/
+  --marca-azul-escuro: #0175c3;
+  --marca-azul-claro: #3fbbe9;
+  --marca-vermelho: #ff392f;
+  --marca-branco: #ffffff;
+
+  /* Cores para aplicar no site*/
+  
+  /* Fundos */
+  --bg-principal: var(--marca-branco);
+  --bg-secundario: #f2f9fe; /* Uma versão quase transparente do azul claro para diferenciar seções do site */
+
+  /* Textos */
+  --texto-titulo: var(--marca-azul-escuro);
+  --texto-paragrafo: #2c3e50;
+  --texto-invertido: var(--marca-branco); /* Para textos dentro de botões escuros ou vermelhos */
+
+  /* Interface e Ações (Botões, Links, Ícones) */
+  --cor-primaria: var(--marca-azul-escuro); /* Para links, botões principais e elementos de navegação */
+  --cor-secundaria: var(--marca-azul-claro); /* Para efeitos de hover (passar o mouse), fundos de botões secundários e ícones de apoio */
+  --cor-destaque: var(--marca-vermelho); /* Para Call to Actions (CTAs), botões de "Comprar" ou "Saiba Mais", e alertas */
+
+  /* Bordas */
+  --cor-borda: var(--marca-azul-claro);
+  --cor-borda-escura: var(--marca-azul-escuro);
+
+  /* Fonte */
+  --fonte-body: Helvetica, sans-serif;
+  --fonte-titulo: Verdana, sans-serif;
+}
+
+body {
+  font-family: var(--fonte-body);
+  color: var(--texto-paragrafo);
+}
+
+header, main, footer {
+  width: 840px;
+  margin: 0 auto;
+}
+
+h1, h2 {
+  font-family: var(--fonte-titulo);
+  color: var(--texto-titulo);
+  text-align: center;
+}
+
+nav, p, section, article {
+  margin: 20px;
+  padding: 12px;
+}
+
+.redes-sociais a {
+  text-decoration: none;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+h1 {
+  position: absolute;
+  top: 15px;
+  left: 325px;
+  background-color: var(--bg-principal);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+article {
+  position: absolute;
+}
