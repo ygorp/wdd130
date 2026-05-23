@@ -15,21 +15,10 @@
   
   /* Fundos */
   --bg-principal: var(--marca-branco);
-  --bg-secundario: #f2f9fe; /* Uma versão quase transparente do azul claro para diferenciar seções do site */
 
   /* Textos */
   --texto-titulo: var(--marca-azul-escuro);
   --texto-paragrafo: #2c3e50;
-  --texto-invertido: var(--marca-branco); /* Para textos dentro de botões escuros ou vermelhos */
-
-  /* Interface e Ações (Botões, Links, Ícones) */
-  --cor-primaria: var(--marca-azul-escuro); /* Para links, botões principais e elementos de navegação */
-  --cor-secundaria: var(--marca-azul-claro); /* Para efeitos de hover (passar o mouse), fundos de botões secundários e ícones de apoio */
-  --cor-destaque: var(--marca-vermelho); /* Para Call to Actions (CTAs), botões de "Comprar" ou "Saiba Mais", e alertas */
-
-  /* Bordas */
-  --cor-borda: var(--marca-azul-claro);
-  --cor-borda-escura: var(--marca-azul-escuro);
 
   /* Fonte */
   --fonte-body: Helvetica, sans-serif;
@@ -57,7 +46,7 @@ nav, p, section, article {
   padding: 12px;
 }
 
-.redes-sociais a {
+.socialmedia a {
   text-decoration: none;
 }
 
@@ -71,7 +60,7 @@ nav, p, section, article {
   height: auto;
 }
 
-h1 {
+.hero h1 {
   position: absolute;
   top: 15px;
   left: 325px;
@@ -80,7 +69,7 @@ h1 {
   border-radius: 5px;
 }
 
-article {
+.hero article {
   position: absolute;
   bottom: 0;
   left: 10px;
