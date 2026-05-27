@@ -8,21 +8,37 @@
   --cor-texto-borda: #000000;
   --cor-fundo: aliceblue;
   --comprimento-imagem: 200px;
+  --cor-houver-link: cadetblue;
+  --cor-titulo: cornflowerblue;
+}
+
+header, footer, .grid {
+  max-width: 840px;
+  margin: 0 auto;
 }
 
 nav {
   background-color: var(--cor-fundo);
   padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 nav a {
   color: var(--cor-texto-borda);
   padding: 8px;
   display: block;
+  text-decoration: none;
 }
 
-main {
-  max-width: 850px;
+nav a:hover {
+  color: var(--cor-houver-link);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 main img {
@@ -36,11 +52,12 @@ main img {
 }
 
 h1 {
-  color: cornflowerblue;
+  display: inline-block;
+  color: var(--cor-titulo);
+  border-bottom: 1px solid var(--cor-titulo);
 }
 
 aside {
-  width: 650px;
   border-radius: 5px;
 }
 

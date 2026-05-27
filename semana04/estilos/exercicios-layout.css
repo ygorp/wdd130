@@ -23,19 +23,30 @@ div {
 
 .flex {
     background-color: #aba;
-    /* escreva declaracoes aqui */
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .grid {
     background-color: #abb;
-    /* escreva declaracoes aqui */
-
+    display: grid;
+    justify-items: center; 
+    align-items: center;
 }
 
 .container2 {
-    /* escreva declaracoes aqui */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
 
+@media(max-width: 580px) {
+    .container2 {
+        flex-direction: column;
+    }
 }
 
 .dois {
@@ -44,8 +55,12 @@ div {
 }
 
 .container3 {
-    /* escreva declaracoes aqui */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
 
+.container3 :first-child {
+    grid-column: 1 / -1; 
 }
 
 .colunas-3 {
