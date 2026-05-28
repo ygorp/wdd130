@@ -13,6 +13,7 @@
   
   /* Fundos */
   --bg-principal: var(--marca-branco);
+  --bg-secundario: #f2f9fe;
 
   /* Textos */
   --texto-titulo: var(--marca-azul-escuro);
@@ -33,19 +34,44 @@ header, main, footer {
   margin: 0 auto;
 }
 
+header {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  place-items: center;
+}
+
+header img {
+  width: 150px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--texto-paragrafo);
+  font-family: var(--fonte-body);
+  font-size: 18px;
+  border-bottom: 1px solid var(--texto-paragrafo);
+}
+
+.menu a:hover {
+  color: var(--marca-azul-escuro);
+}
+
 h1, h2 {
   font-family: var(--fonte-titulo);
   color: var(--texto-titulo);
   text-align: center;
 }
 
-nav, p, section, article {
+.menu, p, section, article {
   margin: 20px;
   padding: 12px;
-}
-
-.socialmedia a {
-  text-decoration: none;
 }
 
 .hero {
@@ -77,4 +103,62 @@ nav, p, section, article {
 .hero article img {
   float: right;
   width: 125px;
+}
+
+.history {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-secundario);
+}
+
+.history div {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  place-items: center;
+}
+
+.history img {
+  width: 150px;
+}
+
+.Adventure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.Adventure div {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 5px;
+  text-align: center;
+}
+
+.Adventure img {
+  width: 150px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: var(--bg-secundario);
+}
+
+.socialmedia {
+  display: flex;
+  gap: 8px;
+  
+}
+
+.socialmedia a {
+  text-decoration: none;
+}
+
+.socialmedia img {
+  width: 30px;
 }
