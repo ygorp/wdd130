@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Ygor Pacheco Nogueira">
+  <meta name="description" content="Está página disponibiliza um formulário para os clientes entrarem em contato com a empresa Corredeiras, além de exibir as redes sociais da empresa.">
+  <title>Contato | Corredeiras</title>
+
+  <link rel="stylesheet" href="estilos/contato.css">
+</head>
+<body>
+  <header class="contato_header">
+    <img src="imagens/logo.png" alt="Imagem mostrando a logo da empresa corredeiras">
+    <nav class="menu">
+      <a href="index.html">Página Inicial</a>
+      <a href="sobre.html">Sobre Nós</a>
+      <a href="passeios.html">Passeios</a>
+      <a href="contato.html">Fale Conosco</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Companhia de Rafting Corredeiras</h1>
+    <p>Rua açucena 22, Serra Dourada 2</p>
+    <p>Serra - ES</p>
+    <p>Telefone: (27) 99999-9999</p>
+    <div class="contato">
+      <div class="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.1234567890123!2d-40.12345678901234!3d-20.12345678901234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1234567890123456%3A0xabcdef1234567890!2sRua%20Açucena%2022%2C%20Serra%20Dourada%202%2C%20Serra%20-%20ES%2C%2002900-000!5e0!3m2!1spt-BR!2sbr!4v1700000000000" width="450" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      <form action="#" method="post">
+        <div class="informacoes">
+          <div>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome aqui" required>
+          </div>
+
+          <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu email aqui" required>
+          </div>
+        </div>
+
+        <div class="motivo">
+          <div><p>Propósito da</br> mensagem:</p></div>
+          <div class="opcoes">
+            <div><input type="radio" id="motivo1" name="motivo" value="Dúvida" required>
+            <label for="motivo1">Dúvida geral</label></div>
+            <div><input type="radio" id="motivo2" name="motivo" value="Pergunta sobre reserva" required>
+            <label for="motivo2">Pergunta sobre reserva</label></div>
+            <div><input type="radio" id="motivo3" name="motivo" value="Sugestão" required>
+            <label for="motivo3">Sugestão</label></div>
+          </div>
+        </div>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+        <div>
+          <input type="checkbox" id="consentimento" name="consentimento" required>
+          <label for="consentimento">Quero receber a newsletter mensal.</label>
+        </div>
+
+        <button type="submit">Entrar em contato</button>
+      </form>
+    </div>
+
+    <div class="funcionarios">
+      <h2>Nossa Equipe</h2>
+      <p>Conheça os profissionais que estão prontos para te atender!</p>
+
+      <div class="funcionario">
+        <div>
+          <h3>Bianca Silva</h3>
+          <img src="imagens/funcionario1.jpg" alt="Imagem de um funcionário da empresa Corredeiras, ele é um homem sorridente usando um colete salva-vidas e um capacete de rafting.">
+          <figcaption>Instrutora de Rafting</figcaption>
+        </div>
+        <div>
+          <h3>Renata Oliveira</h3>
+          <img src="imagens/funcionario2.jpg" alt="Imagem de um funcionário da empresa Corredeiras, ele é um homem sorridente usando um colete salva-vidas e um capacete de rafting.">
+          <figcaption>Socorrista de Rafting</figcaption>
+        </div>
+        <div>
+          <h3>Carlos Santos</h3>
+          <img src="imagens/funcionario3.jpg" alt="Imagem de um funcionário da empresa Corredeiras, ele é um homem sorridente usando um colete salva-vidas e um capacete de rafting.">
+          <figcaption>Guia de Rafting</figcaption>
+        </div>
+      </div>  
+    </div>
+  </main>
+  <footer>
+    <p>&copy;, 2026, Corredeiras, Ygor Pacheco Nogueira</p>
+    <nav class="socialmedia">
+      <a href="https://instagram.com"><img src="imagens/instagram.svg" alt="Imagem exibe a logo da rede social Instagram"></a>
+      <a href="https://facebook.com"><img src="imagens/facebook.svg" alt="Imagem exibe a logo da rede social Facebook"></a>
+      <a href="https://youtube.com"><img src="imagens/youtube.svg" alt="Imagem exibe a logo da rede social Youtube"></a>
+    </nav>
+  </footer>
+</body>
+</html>
