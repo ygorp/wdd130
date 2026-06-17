@@ -88,6 +88,7 @@ h1, h2, p {
   display: block;
   width: 100%;
   height: auto;
+  border-radius: 8px;
 }
 
 .hero h1 {
@@ -259,4 +260,46 @@ footer {
 
 .redes-sociais img {
   width: 30px;
+}
+
+/* Estilo página inicial */
+.hero .hero-title {
+  position: absolute;
+  top: 55px;
+  left: 200px;
+  background-color: var(--bg-principal);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.hero .hero-subtitle {
+  position: absolute;
+  top: 190px;
+  left: 145px;
+  background-color: var(--bg-principal);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.calltoaction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: var(--bg-secundario);
+  border: 2px solid var(--marca-azul-escuro);
+  border-radius: 8px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.calltoaction a {
+  text-decoration: none;
+  color: var(--marca-branco);
+  background-color: var(--marca-azul-escuro);
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 18px;
 }
